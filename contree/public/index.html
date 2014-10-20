@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>T@HAT</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+
+<body>
+
+  
+  
+    <div id="cursors">
+        	<!-- Affichage des curseurs -->
+    </div>
+  
+  
+  
+  
+  <div id="login">
+	<form method=post action="" id="loginform">
+		<h1 style="text-align:center; font:60px 'Raleway', sans-serif;">Bienvenue</h1>
+		<p style="text-align:center; font-size:20px;">Entrez votre pseudo, et l'url de votre avatar :</p>
+		<input type="text" name="login" id="username" placeholder="Nom d'utilisateur">
+		<input type="text" name="url" id="url" placeholder="Url" value="http://i.pcworld.fr/1245685-microsoft-nouveau-logo-2012-carre.png">
+		<input type="submit" value="Envoyer" class="button">
+	</form>
+  </div>
+  
+  <div id="hall">
+	  <div id="menu">
+		<h1></h1>
+		<!--<form id="quizz"><input type="submit" id="quizzbutton" value="QUIZZ !" class="submit"></form>-->
+		
+		<h1 style="font:40px 'Raleway', sans-serif;">Utilisateurs :</h1>
+		<div id="users">
+		</div>
+	  </div>
+	  
+	  
+
+	  
+
+	  <div id="messages">
+
+	  </div>
+	  
+	  
+	  <div id="salle">
+		<h1 style="text-align:center;">Liste des parties</h1>
+		<form><input type="submit" id="creer" value="Crée !" class="submit"></form>
+		<a href="./ajout.html" class="submit" target="_blank">Créer !</a>
+		
+		<div id="rooms">
+		
+		<div>
+	  </div>
+	  
+
+	  <form action="" id="form">
+		<input type="text" id="message" class="text">
+		<input type="submit" id="send" value="Envoyer" class="submit">
+		<br>
+		<img id="lolipop" src="Images/smileys/1.png" /><div class="smileys"></div>
+	  </form>
+  </div>
+
+ 
+  
+  <script src="jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  
+  <script src="souris.js"></script>
+  <script src="client_chat.js"></script>
+</body>
+
+
+</html>

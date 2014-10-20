@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Paint</title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+
+<body>
+  
+	
+	<div id="sketch" style="background-color:#FFFFFF;width: 95%;height: 95%;position:absolute;">
+		<canvas id="paint"></canvas>
+	</div>
+  
+  
+  
+  
+    <div id="cursors">
+        	<!-- Affichage des curseurs -->
+    </div>
+	
+	<div id="draggable" class="draggable"><p>Paint menu :</p>
+		<input type="submit" value="Souris" class="smallbutton">
+		<input type="submit" value="Pinceau" class="smallbutton">
+		<input type="submit" value="Trait" class="smallbutton">
+		<input type="submit" value="Rectangle" class="smallbutton">
+	</div>
+	
+	<div id="draggable2" class="draggable"><p>Parametres :</p>
+		<ul id="couleurs">
+            <li><a href="#" data-couleur="#000000" style="color:#000000">Noir</a></li>
+            <li><a href="#" data-couleur="#ffffff" style="color:#ffffff">Blanc</a></li>
+            <li><a href="#" data-couleur="#ff0000" style="color:#ff0000">Rouge</a></li>
+		</ul>
+			Largeur du pinceau :
+			<input type="range" min="2" max="50" value="5" id="largeur"/>
+	</div>
+  
+  
+  
+  
+  <script src="/socket.io/socket.io.js"></script>
+  
+  <script src="souris.js"></script>
+  <script src="paint.js"></script>
+  
+  
+</body>
+
+
+</html>
