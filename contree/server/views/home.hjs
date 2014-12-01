@@ -11,7 +11,7 @@
 
 	<title>Create a new chat room! | Tutorialzine Demo</title>
 
-	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+	<link type="text/css" rel="stylesheet" href="stylesheets/stylesheet.css" />
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans Condensed:300italic,300,700" rel="stylesheet" type="text/css">
 
 
@@ -32,7 +32,7 @@
 		<div class="homesection">
 
 			<div class="logo">
-				<img src="img/nodejslogo.png" alt="nodelogo" id="nodelogo"/>
+				<img src="images/nodejslogo.png" alt="nodelogo" id="nodelogo"/>
 				<h2 id="chat">Jeu de Contrée</h2>
 			</div>
 
